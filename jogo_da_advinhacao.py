@@ -17,6 +17,7 @@ while(tentativas > 0):
 
     if (acertou):
         print("Parabens " + nome + " Você Acertou!!" )
+        break
     elif(menor):
         if(tentativas == 1 and chute == numero):
             print("Parabens " + nome + " Você Acertou!!" ) 

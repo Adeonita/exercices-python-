@@ -1,12 +1,12 @@
 numero_da_sorte = 8
 tentativas = 3
-rodada = 1
+rodada = 1 
 
 print("\n\nBem vindo ao jogo da Advinhação, você tem 3 chances para acertar um número de 0 (Zero) a 9 (Nove)")
 
 for rodada in range( 1, tentativas + 1):
     if(rodada == 3):
-        print("\n\n\nÚltima Rodada\n")
+        print("\n\nÚltima Rodada\n")
 
     print("\n\nRodada {} de {}". format(rodada, tentativas))
 

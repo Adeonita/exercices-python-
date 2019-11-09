@@ -1,9 +1,9 @@
 print("\nBem vindo ao jogo da Forca\nVocê deverá advinhar qual a palavra secreta")
 
-palavra_secreta = "banana"
-letras_acertadas = ['_','_','_','_','_','_']
-eh_uma = "Fruta"
+palavra_secreta = "casa"
 tamanho_palavra = len(palavra_secreta)
+letras_acertadas = [' ',] * tamanho_palavra
+eh_uma = "Fruta"
 acertou = False
 enforcou =  False
 acertos = 0

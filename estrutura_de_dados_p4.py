@@ -1,0 +1,26 @@
+
+def insere_pessoa():
+    insere_pessoa = True
+    lista = []
+    while(insere_pessoa):
+        print("\nCadastro de pessoa, insira os dados solicitados\n")
+        nome = input("Digite o nome: ")
+        idade = input("Digite a idade: ")
+        cidade = input("Digite a cidade: ")
+        pessoa = dict(nome  = nome, idade = idade, cidade = cidade )
+        lista.append(pessoa)
+        resposta = input("\nDigite 1 para cadastrar nova pessoa e 0 para listar: ")
+        if(resposta == '0'):
+            insere_pessoa = False
+
+    return(lista)
+
+lista = insere_pessoa()
+
+def exibe_pesoa(lista):
+    for valor in lista:
+        print("\n {}".format(valor))
+        
+
+print("\n**********Pessoas cadastradas no sistema**********\n")
+exibe_pesoa(lista)

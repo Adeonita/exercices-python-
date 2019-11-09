@@ -1,7 +1,10 @@
+lista = []
+
 nome = input("Digite seu nome: ")
-#sobrenome = input("Digite seu sobrenome: ")
-#idade = input("Digite sua idade: ")
+lista.append(nome)
+sobrenome = input("Digite seu sobrenome: ")
+lista.append(sobrenome)
+idade = input("Digite sua idade: ")
+lista.append(idade)
 
-lista = ['nome': 'append(nome)']
 print(lista)
-

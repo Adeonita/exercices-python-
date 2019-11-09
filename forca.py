@@ -8,10 +8,11 @@ acertou = False
 enforcou =  False
 acertos = 0
 erros = 0
-pontos = 10
+pontos = tamanho_palavra*2
+ganha_ponto = 5
 perde_ponto = pontos/tamanho_palavra
 
-print("\nA palavra tem {} letras e é um(a) {}".format(tamanho_palavra, eh_uma))
+print("\nA palavra tem {} letras e é um(a) {}\nA cada erro você perde {} pontos\nO Jogo começou, e você tem {} pontos".format(tamanho_palavra, eh_uma,perde_ponto, pontos))
 print("\n {}".format(letras_acertadas))
 
 while(not acertou and not enforcou):
@@ -30,9 +31,11 @@ while(not acertou and not enforcou):
             index = index + 1
     else:
         erros = erros + 1
-        if(erros == tamanho_palavra):
+        pontos = pontos - perde_ponto
+        print("Você agora tem {} pontos".format(pontos))
+        if(erros == tamanho_palavra + 3 or pontos == 0):
            enforcou = True 
-    print(letras_acertadas)
+    print("\n {}".format(letras_acertadas))
     
     
     if(acertou):

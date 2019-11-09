@@ -18,8 +18,12 @@ def insere_pessoa():
 lista = insere_pessoa()
 
 def exibe_pesoa(lista):
-    for valor in lista:
-        print("\n {}".format(valor))
+    for pessoa in lista:
+        #print("\n {}".format(valor))cio um d
+        #Para pegar um atributo de um dict se usa a função get
+        print("\nNome: {}".format(pessoa.get('nome')))
+        print("Idade: {}".format(pessoa.get('idade')))
+        print("Cidade: {}".format(pessoa.get('cidade')))
         
 
 print("\n**********Pessoas cadastradas no sistema**********\n")
